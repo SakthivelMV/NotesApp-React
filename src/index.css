@@ -11,3 +11,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.lists{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+}
+.notes.add{
+  background-color: rgb(131, 228, 131);
+}
+textarea{
+  border: none;
+  resize: none;
+  background-color: rgb(131, 228, 131);
+}
+textarea:focus{
+  outline: none;
+}
+.save{
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+.save:hover{
+  background-color: yellow;
+  cursor: pointer;
+}
+.notes{
+  background-color: rgba(233, 144, 12, 0.903);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+.notes-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.del{
+cursor: pointer;
+}
+.search{
+  display: flex;
+  align-items: center;
+  background-color: beige;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+.search input{
+  border: none;
+  background-color: beige;
+}
+.search input:focus{
+  outline: none;
+}
